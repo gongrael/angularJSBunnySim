@@ -15,11 +15,15 @@
     <!-- JS-->
     <script data-require="angular.js@1.3.9" data-semver="1.3.9" src="https://code.angularjs.org/1.3.9/angular.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/random.js"></script>
+
   </head>
   <body ng-app="bunnySim">
     <div ng-controller = "MainController">
       <h2>Moves remaining: {{countDown}}</h2>
       <h2>Bunny energy: {{bunnyEnergy}} </h2>
+      <h2>Regeneration rate: {{regeneration}}%</h2>
+      <h2>Plant Grows: {{grow}} </h2>
 
       <div ng-repeat="field in fieldArray">
          <div class="icon icon-{{field.class}} icon-{{field.class}}-dims"> </div>
