@@ -4,7 +4,7 @@
 
     var randomNumb = function(max) {
       var randomNumb = Math.random()*max;
-      return randomNumb;
+      return Math.floor(randomNumb);
     };
 
     return {

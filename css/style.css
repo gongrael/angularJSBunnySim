@@ -1,4 +1,14 @@
 .grass {
 fill: #93be5a;
-fill-opacity: .75;
+fill-opacity: .50;
+}
+
+
+.bush {
+fill: #93be5a;
+fill-opacity: .90;
+}
+
+.bunny {
+fill: #ffffff;
 }

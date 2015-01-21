@@ -6,6 +6,7 @@
 
     	var decrementCountDown = function(){
     		$scope.countDown -= 1;
+            $scope.bunnyEnergy -=1;           
         }
 
     	//function that when invoked starts the simulation.. to stop the function early set %scope.countDown to 0.
@@ -15,6 +16,11 @@
         
 
         var bunnyBuilder = function() {
+        }
+
+
+        var bunnyStartPosition = function(){
+            $scope.fieldArray[randomNumb.randomNumb($scope.width*$scope.height)].class="bunny"; 
         }
 
 
@@ -42,6 +48,7 @@
         $scope.grow = "false";
         $scope.fieldArray = field($scope.width, $scope.height);
     	//start the simulation
+        bunnyStartPosition();
     	startSim();
     }
 	
