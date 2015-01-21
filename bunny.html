@@ -1,0 +1,27 @@
+<div>
+  
+      <h2>Moves remaining: {{countDown}}</h2>
+      <h2>Bunny energy: {{bunnyEnergy}} </h2>
+      <h2>Regeneration rate: {{regeneration}}%</h2>
+      <h2>Plant Grows: {{grow}} </h2>
+
+      <br>
+
+      <h2 class="{{width}}">{{width}} x {{height}}</h2> 
+
+      <br><br>
+
+
+  	  <svg class="appear" version="1.1" ng-attr-width="{{width*20}}" ng-attr-height="{{height*20}}">
+	      <g class="grass">
+        	<rect  ng-repeat="grass in fieldArray" class="appear" ng-attr-x="{{grass.x*20}}" ng-attr-y="{{grass.y*20}}" ng-attr-width="{{grass.size}}" ng-attr-height="{{grass.size}}"></rect>
+       	  </g>
+      </svg>
+
+
+
+
+
+
+</div>
+
